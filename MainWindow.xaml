@@ -6,9 +6,12 @@
     xmlns:local="using:JSONViewer.NET"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
-
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
+    mc:Ignorable="d"
+    Title="JSONVisualizer.NET">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="15">
+        <TextBlock Style="{StaticResource TitleTextBlockStyle}">JSONVisualiser.NET</TextBlock>
+        <TextBox x:Name="input" Height="300" TextWrapping="Wrap" AcceptsReturn="True" Margin="0,15,0,15"></TextBox>
+        <Button x:Name="start" Click="start_Click">Visualise</Button>
+        <StackPanel x:Name="output" Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="15,0,0,0"></StackPanel>
     </StackPanel>
 </Window>

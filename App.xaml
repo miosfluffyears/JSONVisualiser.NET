@@ -11,6 +11,10 @@
                 <!-- Other merged dictionaries here -->
             </ResourceDictionary.MergedDictionaries>
             <!-- Other app resources here -->
+            <Style TargetType="Grid" x:Key="ObjectGrid">
+                <Setter Property="BorderBrush" Value="Black" />
+                <Setter Property="BorderThickness" Value="1" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
